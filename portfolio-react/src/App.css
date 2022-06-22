@@ -6,10 +6,9 @@
   --ShadowGrey : #00000022;
   --DarkCyan : #00615f;
   --imagesInCarouselle : 9;
-  --carouselleSpeed: 1;
-  --Radius : 1rem;
+  --carouselleSpeed: 0.2;
+  --Radius : 0.25rem;
 }
-
 .App {
   text-align: center;
   overflow-x: hidden;
@@ -18,12 +17,10 @@ body {
   background-color: var(--White);
   color: var(--Grey);
 }
-
 #logo img {
   padding: 1rem 5rem;
   height: 3rem;
 }
-
 #navBar {
   width: 100vw;
   height: 7rem;
@@ -41,29 +38,24 @@ a {
   color: var(--Cyan);
   transition: .2s;
 }
-
 #navBar a {
   padding: 1rem;
   color: var(--Grey);
 }
-
 #active {
   color: var(--Cyan);
 }
-
 #navInnerFlex {
   width: 60%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 #navBarText {
   width: 100%;
   display: flex;
   justify-content: space-around;
 }
-
 .heroImage {
   width: 100vw;
   height: calc(100vh - 7rem);
@@ -99,9 +91,8 @@ a {
   background: url('./Components/Images/Carouselle/8.jpg');
 }
 #heroImage9 {
-  background: url('./Components/Images/Carouselle/1.jpg');
+  background: url('./Components/Images/Carouselle/9.jpg');
 }
-
 @keyframes toLeft {
   from {
     transform: translateX(0);
@@ -112,7 +103,6 @@ a {
     z-index: 1;
   }
 }
-
 #heroTxt {
   display: flex;
   justify-content: center;
@@ -135,7 +125,7 @@ a {
   z-index: 1;
 }
 .hCarouselle div {
-  animation: toLeft calc(300s/var(--carouselleSpeed)) infinite linear;
+  animation: toLeft calc(60s/var(--carouselleSpeed)) infinite linear;
 }
 .sericeTileContainer {
   width: 100vw;
@@ -162,16 +152,15 @@ h1 {
 }
 .overallFooter {
   width: 100vw;
-  padding: 4rem 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: url('./Components/Images/Tile\(+\).png');
-  background-size: 3rem;
+  background: url('./Components/Images/dot.png');
+  image-rendering: pixelated;
+  background-size: 0.5rem;
   color: var(--Cyan);
 }
-
 .contactFooter {
   min-height: 520px;
   min-width: 900px;
@@ -195,7 +184,6 @@ h1 {
 .contactFooterTile h1 {
   text-align: center;
 }
-
 .whiteColor {
   color: var(--White);
   font-weight: 300;
@@ -223,12 +211,10 @@ h1 {
   grid-column: 2;
   grid-row: 6;
 }
-
 #contactFooterTile6 {
   grid-column: 4;
   grid-row: 6;
 }
-
 #contactFooterTile7 {
   grid-column: 6;
   grid-row: 6;
@@ -237,12 +223,10 @@ h1 {
   grid-column: 2;
   grid-row: 8;
 }
-
 #contactFooterTile9 {
   grid-column: 4;
   grid-row: 8;
 }
-
 #contactFooterTile10 {
   grid-column: 6;
   grid-row: 8;
@@ -310,4 +294,53 @@ h1 {
 }
 .contactFooterTile img {
   fill: var(--Cyan);
+}
+.footerCont {
+  width: 100vw;
+  height: 50rem;
+  background: var(--White);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer {
+  width: 50vw;
+  height: 46rem;
+  display: grid;
+  grid-template-columns: 1fr 6rem 6rem;
+  grid-template-rows: 1fr 2rem 8rem 2rem 4rem;
+}
+.footerTile img{
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+#footerTile1 {
+  grid-row: 1;
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+/* five peaks chartered accounting */
+#footerTile2 {
+  grid-row: 3;
+  grid-column: 1;
+}
+/* nav */
+#footerTile3 {
+  grid-row: 4;
+  grid-column: 1;
+}
+/* links */
+#footerTile4 {
+  grid-row-start: 3;
+  grid-row-end: 5;
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+/* partnering */
+#footerTile5 {
+  grid-row: 5;
+  grid-column-start: 1;
+  grid-column-end: 4;
 }

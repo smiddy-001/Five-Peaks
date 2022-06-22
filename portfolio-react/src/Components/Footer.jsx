@@ -2,6 +2,9 @@ import Map from './SVG/map.svg';
 import Time from './SVG/time.svg';
 import Call from './SVG/call.svg';
 import Mail from './SVG/mail.svg';
+import Mountain from './SVG/Mountain.svg'
+import Partnering from './SVG/Partnering.svg'
+import FivePeaksCA from './SVG/FivePeaks Chartered Accounting.svg'
 
 function Maps() {
     return (
@@ -30,8 +33,23 @@ export default function News() {
                 <div id="contactFooterTile15" className="contactFooterTile"><Maps/>
                 </div>
             </div>
-            <div className="footer">
-                footer
+            <div className="footerCont">
+                <div className="footer">
+                    <div id="footerTile1" className="footerTile"><img src={Mountain} alt="Mountain" /></div>
+                    <div id="footerTile2" className="footerTile"><img src={FivePeaksCA} alt="five peaks chartered accounting" /></div>
+                    <div id="footerTile3" className="footerTile">
+                        {/* nav */}
+                    </div>
+                    <div id="footerTile4" className="footerTile">
+                        <div className="socialCube">
+                            <div id="socialCube1">I</div>
+                            <div id="socialCube2">L</div>
+                            <div id="socialCube3">F</div>
+                            <div id="socialCube4">T</div>
+                        </div>
+                    </div>
+                    <div id="footerTile5" className="footerTile"><img src={Partnering} alt="partnering" /></div>
+                </div>
             </div>
         </div>
     );
