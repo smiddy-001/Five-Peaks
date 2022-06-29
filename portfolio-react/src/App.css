@@ -1,19 +1,20 @@
 :root {
   --Lime : #bfd42f;
-  --Cyan : #009592;
+  --Cyan : #009490;
   --Grey : #4e5859;
   --White : #f2f2f2;
   --ShadowGrey : #00000022;
-  --DarkCyan : #00615f;
+  --DarkCyan : #027975;
   --imagesInCarouselle : 9;
-  --carouselleSpeed: 0.2;
-  --Radius : 0.25rem;
+  --carouselleSpeed: 0.1;
+  --Radius : 0.1rem;
 }
 .App {
   text-align: center;
   overflow-x: hidden;
 }
 body {
+  scroll-behavior: smooth;
   background-color: var(--White);
   color: var(--Grey);
 }
@@ -36,7 +37,11 @@ a {
 #navBar a:hover {
   cursor: pointer;
   color: var(--Cyan);
-  transition: .2s;
+  transition: .1s;
+}
+#navBar :not(a:hover) {
+  color: var(--Grey);
+  transition: 2s;
 }
 #navBar a {
   padding: 1rem;
@@ -127,22 +132,17 @@ a {
 .hCarouselle div {
   animation: toLeft calc(60s/var(--carouselleSpeed)) infinite linear;
 }
-.sericeTileContainer {
+.serviceTileContainer {
   width: 100vw;
-  height: 60rem;
+  height: 20rem;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  flex-direction: column;
+  flex-direction: row;
 }
 .servicesTile {
-  width: 50%;
-}
-.servicesTile:nth-child(odd){
-  text-align: left;
-}
-.servicesTile:nth-child(even) {
-  text-align: right;
+  width: 20%;
+  text-align: center;
 }
 h1 {
   color: var(--Cyan);
@@ -156,8 +156,7 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: url('./Components/Images/dot.png');
-  image-rendering: pixelated;
+  background: url('./Components/Images/dot.png');  
   background-size: 0.5rem;
   color: var(--Cyan);
 }
@@ -166,7 +165,7 @@ h1 {
   min-width: 900px;
   height: 26rem;
   display: grid;
-  grid-template-columns: 1rem 1rem 1rem 1fr 1rem 2fr 2rem 32rem;
+  grid-template-columns: 1rem 1.5rem 1rem 5rem 1rem 2fr 2rem 32rem;
   grid-template-rows: 1rem 2fr 1rem 1fr 1rem 1fr 1rem 2fr 1rem 1fr 1rem 2fr 1rem;
   /* (13x8) */
   margin: 4rem 0;
@@ -280,12 +279,12 @@ h1 {
 }
 .contactFooter .Button:hover {
   cursor: pointer;
-  transition: .2s;
+  transition: .1s;
   background-color: var(--ShadowGrey);
   color: var(--White);
 }
 .contactFooter .Button:not(:hover){
-  transition: .2s;
+  transition: 2s;
   background-color: var(--White);
   color: var(--DarkCyan);
 }
@@ -304,43 +303,67 @@ h1 {
   align-items: center;
 }
 .footer {
-  width: 50vw;
-  height: 46rem;
+  width: 40rem;
   display: grid;
-  grid-template-columns: 1fr 6rem 6rem;
-  grid-template-rows: 1fr 2rem 8rem 2rem 4rem;
+  grid-template-columns: 1rem 1fr 1rem 5rem 5rem 1rem;
+  grid-template-rows: 1rem 1fr 1rem 8rem 1rem 2rem 1rem 2rem 1rem;
 }
 .footerTile img{
-  width: auto;
-  height: auto;
-  max-width: 100%;
-  max-height: 100%;
+  width: 100%;
 }
 #footerTile1 {
-  grid-row: 1;
-  grid-column-start: 1;
-  grid-column-end: 4;
+  grid-row: 2;
+  grid-column-start: 2;
+  grid-column-end: 6;
 }
 /* five peaks chartered accounting */
 #footerTile2 {
-  grid-row: 3;
-  grid-column: 1;
+  grid-row: 4;
+  grid-column: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 /* nav */
 #footerTile3 {
-  grid-row: 4;
-  grid-column: 1;
+  grid-row: 6;
+  grid-column-start: 2;
+  grid-column-end: 6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 /* links */
 #footerTile4 {
-  grid-row-start: 3;
+  grid-row-start: 4;
   grid-row-end: 5;
-  grid-column-start: 2;
-  grid-column-end: 4;
+  grid-column-start: 4;
+  grid-column-end: 6;
 }
 /* partnering */
 #footerTile5 {
-  grid-row: 5;
-  grid-column-start: 1;
-  grid-column-end: 4;
+  grid-row: 8;
+  grid-column-start: 2;
+  grid-column-end: 6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#footerTile5 img {
+  height: .75rem;
+}
+.socialCube {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  width: 100%;
+  height: 100%;
+}
+.socialCubeTile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.socialCubeTile img {
+  height: 3rem;
 }

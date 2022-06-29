@@ -6,13 +6,20 @@ import Mountain from './SVG/Mountain.svg'
 import Partnering from './SVG/Partnering.svg'
 import FivePeaksCA from './SVG/FivePeaks Chartered Accounting.svg'
 
+// Contact Icon Svg's
+import fb from './SVG/facebook-fill.svg'
+import ig from './SVG/instagram-fill.svg'
+import ld from './SVG/linkedin-box-fill.svg'
+import tw from './SVG/twitter-fill.svg'
+
+
 function Maps() {
     return (
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2376.477531327487!2d168.75624450426653!3d-45.01272968158803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa9d51f6e3c97416f%3A0x1d6488e8ae6b0114!2sFive%20Peaks%20Chartered%20Accounting!5e0!3m2!1sen!2snz!4v1655687303325!5m2!1sen!2snz" title="map" style={{border:0}} width="512px" height="512px" tabIndex="0" id="mapTile"></iframe>
     )
 }
 
-export default function News() {
+export default function News(props) {
     return (
         <div className="overallFooter">
             <div className="contactFooter">
@@ -39,13 +46,14 @@ export default function News() {
                     <div id="footerTile2" className="footerTile"><img src={FivePeaksCA} alt="five peaks chartered accounting" /></div>
                     <div id="footerTile3" className="footerTile">
                         {/* nav */}
+                        {props.children}
                     </div>
                     <div id="footerTile4" className="footerTile">
                         <div className="socialCube">
-                            <div id="socialCube1">I</div>
-                            <div id="socialCube2">L</div>
-                            <div id="socialCube3">F</div>
-                            <div id="socialCube4">T</div>
+                            <div className="socialCubeTile" id="socialCube1"><img src={ig} alt="instagram" /></div>
+                            <div className="socialCubeTile" id="socialCube2"><img src={ld} alt="linkedin" /></div>
+                            <div className="socialCubeTile" id="socialCube3"><img src={fb} alt="facebook" /></div>
+                            <div className="socialCubeTile" id="socialCube4"><img src={tw} alt="twitter" /></div>
                         </div>
                     </div>
                     <div id="footerTile5" className="footerTile"><img src={Partnering} alt="partnering" /></div>

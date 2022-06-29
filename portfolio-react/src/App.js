@@ -14,7 +14,7 @@ import { useState } from 'react';
 
 
 function NavBarA(props) {
-  return <a href={props.href} onClick={props.onClick}>{props.children}</a>
+  return <a href="#navBar" className={props.className} onClick={props.onClick}>{props.children}</a>
 }
 
 function PageBody(props) {
@@ -71,7 +71,15 @@ function App() {
       <div>
         <PageBody page={Page} />
       </div>
-      <Footer/>
+      <Footer>
+        <NavBarA onClick={ToHome}>Home</NavBarA>
+        <NavBarA onClick={ToEnquiry}>Enquiry</NavBarA>
+        <NavBarA onClick={ToAbout}>About</NavBarA>
+        <NavBarA onClick={ToServices}>Services</NavBarA>
+        <NavBarA onClick={ToPricing}>Pricing</NavBarA>
+        <NavBarA onClick={ToNews}>News</NavBarA>
+        <NavBarA onClick={ToContact}>Contact</NavBarA>
+      </Footer>
       {/* above is the navbar */}
     </div>
   );

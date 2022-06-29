@@ -35,7 +35,7 @@ export default function Home() {
         <div>
             <CarouselleTile/>
             
-            <div className="sericeTileContainer">
+            <div className="serviceTileContainer">
                 <div className="servicesTile">
                     <h1 className="Title">Accounting Services</h1>
                     <div className="subText">We'll take care of your accounting and tax so you can focus on other things.</div>

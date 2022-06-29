@@ -1,18 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="109.957" height="95.125" viewBox="0 0 109.957 95.125">
-  <defs>
-    <style>
-      .cls-1 {
-        fill: #fff;
-      }
-    </style>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 109.957 93.741">
   <g id="Layer_2" data-name="Layer 2">
     <g id="Layer_1-2" data-name="Layer 1">
       <g>
-        <path class="cls-1" d="M79.328,0,58.6,20.819h0l-.3.3c.147-.118.294-.224.442-.336L0,79.274V95.125H16.4l93.56-45.857V30.47L88,8.635Z"/>
-        <polygon class="cls-1" points="109.957 95.125 109.957 52.896 23.605 95.125 109.957 95.125"/>
-        <polygon class="cls-1" points="0 35.197 0 74.862 28.577 46.31 0 35.197"/>
-        <polygon class="cls-1" points="17.182 38.615 31.191 43.693 51.429 23.794 33.209 15.137 17.182 38.615"/>
+        <polygon points="109.957 29.086 87.999 7.252 80.718 0 0 80.718 0 93.741 12.034 93.741 109.957 45.854 109.957 29.086" style="fill: #fff"/>
+        <polygon points="109.957 93.741 109.957 54.197 29.094 93.741 109.957 93.741" style="fill: #fff"/>
+        <polygon points="0 33.814 0 70.119 26.14 43.979 0 33.814" style="fill: #fff"/>
+        <polygon points="48.907 21.212 33.209 13.753 20.907 31.775 33.461 36.657 48.907 21.212" style="fill: #fff"/>
       </g>
     </g>
   </g>
