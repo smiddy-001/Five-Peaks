@@ -1,40 +1,23 @@
-const IMAGESINCAROUSELLE = 9
-
-function shuffle(array) {
-    let currentIndex = array.length, randomIndex;
-
-    // While there remain elements to shuffle.
-    while (currentIndex !== 0) {
-
-        // Pick a remaining element.
-        randomIndex = Math.floor(Math.random() * currentIndex);
-        currentIndex--;
-
-        // And swap it with the current element.
-        [array[currentIndex], array[randomIndex]] = [
-            array[randomIndex], array[currentIndex]];
-    }
-
-    return array;
-}
-function CarouselleTile() {
-    let outPut = []
-    for (let step = 0; step < IMAGESINCAROUSELLE; step++) {
-        outPut[step] = <div key={step} id={'heroImage' + (step + 1)} className='heroImage'></div>
-        console.log(outPut)
-    }
+export default function Home(props) {
     return (
-    <div className="hCarouselle">
-        {shuffle(outPut)}
-    </div>
-    )
-}
+        <div id="center50vw">
+            <div id="homeTextGrid">
+                <div id="homeText1">
 
-export default function Home() {
-    return (
-        <div>
-            <CarouselleTile/>
+                Five Peaks Accounting Ltd is a small Queenstown Accountant which is a Chartered Accounting firm that takes the hassle out of business accounting and advice.
+<br /><br />
+                Whether it's setting up an accounting system to match your business requirements or professional advice about taxation, cashflow, business plan, succession planning or starting a business, we're here to help and meet at our Frankton Queenstown office.
+<br /><br />
+                Our pricing is transparent-whether it's a one-off project like a business plan or forecast cashflow-we'll let you know the price before we start. Many of our clients like the monthly pricing plans we offer as these spread the cost throughout the year. And there's no extra charge when you want to call us on the phone with a quick query.
+<br /><br />
+                We pride ourselves on being an accessable Queenstown Accountant. Our practice has been operating since 2015 and we offer a wide range of services to suit all budgets, ensuring that you get the best care and support that you deserve.
+<br /><br />
+                Five Peaks Accounting is a Queenstown Accountant with a focus on small to medium business which we provide in person and local service to. We have an extensive range of business and residential services for you to choose from. We are happy to help you with any of your Five Peaks Accounting needs. We are a family run business. We are able to provide all the services you need to make a difference to your business.
+                </div>
+                <div id="homeText2">{props.leftButton}</div>
+                <div id="homeText3">{props.rightButton}</div>
             
+            </div>
             <div className="serviceTileContainer">
                 <div className="servicesTile">
                     <h1 className="Title">Accounting Services</h1>
