@@ -1,10 +1,5 @@
 export default function About(props) {
-    const style = {
-        color: 'blue',
-        lineHeight: 10,
-        padding: '1.5em',
-    }
     return (
-        <a style={style} className="Button">{props.text}{props.children}</a>
+        <a className="Button" id={props.id} onClick={props.onClick} href={props.href}>{props.text}{props.children}</a>
     );
 }

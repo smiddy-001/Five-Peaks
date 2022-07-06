@@ -5,6 +5,7 @@ import Mail from './SVG/mail.svg';
 import Mountain from './SVG/Mountain.svg'
 import Partnering from './SVG/Partnering.svg'
 import FivePeaksCA from './SVG/FivePeaks Chartered Accounting.svg'
+import Button from './Button'
 
 // Contact Icon Svg's
 import fb from './SVG/facebook-fill.svg'
@@ -36,7 +37,7 @@ export default function News(props) {
                 <div id="contactFooterTile11" className="contactFooterTile"><img src={Time} alt="bussiness Hours" /></div>
                 <div id="contactFooterTile12" className="contactFooterTile textRight"><h4>Bussiness Hours:</h4></div>
                 <div id="contactFooterTile13" className="contactFooterTile"><h4 className="whiteColor">9am - 5pm, Monday to Friday</h4></div>
-                <div id="contactFooterTile14" className="contactFooterTile"><a className="Button" href='www.hello'>Book a meeting</a></div>
+                <div id="contactFooterTile14" className="contactFooterTile"><Button>Book a meeting</Button></div>
                 <div id="contactFooterTile15" className="contactFooterTile"><Maps/>
                 </div>
             </div>

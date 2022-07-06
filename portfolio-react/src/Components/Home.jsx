@@ -1,3 +1,5 @@
+import Button from './Button';
+
 export default function Home(props) {
     return (
         <div id="center50vw">
@@ -14,8 +16,8 @@ export default function Home(props) {
 <br /><br />
                 Five Peaks Accounting is a Queenstown Accountant with a focus on small to medium business which we provide in person and local service to. We have an extensive range of business and residential services for you to choose from. We are happy to help you with any of your Five Peaks Accounting needs. We are a family run business. We are able to provide all the services you need to make a difference to your business.
                 </div>
-                <div id="homeText2">{props.leftButton}</div>
-                <div id="homeText3">{props.rightButton}</div>
+                <div id="homeText2"><Button onClick={props.leftButtononClick}>{props.leftButtontext}</Button></div>
+                <div id="homeText3"><Button onClick={props.rightButtononHref}>{props.rightButtontext}</Button></div>
             
             </div>
             <div className="serviceTileContainer">
