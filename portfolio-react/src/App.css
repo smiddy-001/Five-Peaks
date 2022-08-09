@@ -163,15 +163,15 @@ h1 {
 }
 
 .contactFooter {
-  min-height: 520px;
-  min-width: 900px;
-  height: 42rem;
+  height: 40rem;
   display: grid;
-  grid-template-columns: 1rem 1.5rem 1rem 5rem 1rem 2fr 2rem 32rem;
+  grid-template-columns: 1rem 1.5rem 1rem 5rem 1rem 12rem 2rem auto;
   grid-template-rows: 1rem 2fr 1rem 1fr 1rem 1fr 1rem 2fr 1rem 1fr 1rem 2fr 1rem;
   /* (13x8) */
   margin: 2rem 0;
-  width: var(--ViewableWidth);
+  width: calc(100vw - 24rem);
+  min-width: var(--ViewableWidth);
+  max-width: calc(3 * var(--ViewableWidth));
   padding: 2rem;
   border-radius: var(--Radius);
   background: rgba(0, 0, 0, 0.5);
@@ -320,6 +320,8 @@ h1 {
 
 #mapTile {
   border-radius: var(--Radius);
+  width: 100%;
+  height: 100%;
 }
 
 .contactFooterTile img {
@@ -328,7 +330,7 @@ h1 {
 
 .footerCont {
   width: 100vw;
-  height: 50rem;
+  height: var(--ViewableWidth);
   background: var(--White);
   display: flex;
   justify-content: center;
@@ -565,7 +567,7 @@ h4 {
 
 .aboutMegaFlexContainer {
   width: var(--ViewableWidth);
-  margin: 10rem 0;
+  margin: 4rem 0;
   display: flex;
   flex-direction: column;
 }
@@ -574,11 +576,15 @@ h4 {
   display: flex;
   flex-direction: row;
 }
-.margin1rem {
-  margin: 1rem;
-}
 .aboutInnerFlexRight {
   display: flex;
   flex-direction: column;
+}
+.aboutInnerFlexButton {
+  width: max-content;
+  height: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 

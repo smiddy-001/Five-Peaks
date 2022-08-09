@@ -16,7 +16,7 @@ import tw from './SVG/twitter-fill.svg'
 
 function Maps() {
     return (
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2376.477531327487!2d168.75624450426653!3d-45.01272968158803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa9d51f6e3c97416f%3A0x1d6488e8ae6b0114!2sFive%20Peaks%20Chartered%20Accounting!5e0!3m2!1sen!2snz!4v1655687303325!5m2!1sen!2snz" title="map" style={{border:0}} width="512px" height="512px" tabIndex="0" id="mapTile"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2376.477531327487!2d168.75624450426653!3d-45.01272968158803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa9d51f6e3c97416f%3A0x1d6488e8ae6b0114!2sFive%20Peaks%20Chartered%20Accounting!5e0!3m2!1sen!2snz!4v1655687303325!5m2!1sen!2snz" title="map" style={{border:0}} tabIndex="0" id="mapTile"></iframe>
     )
 }
 
