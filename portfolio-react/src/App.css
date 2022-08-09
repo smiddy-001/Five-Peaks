@@ -8,6 +8,7 @@
   --DarkCyan : #027975;
   --Radius : 0.5rem;
   --Weight : 0.125rem;
+  --ViewableWidth : 50vw;
 }
 
 html {
@@ -15,7 +16,7 @@ html {
 }
 
 .App {
-  text-align: center;
+  text-align: left;
   overflow-x: hidden;
 }
 
@@ -87,7 +88,7 @@ a {
   justify-content: space-around;
 }
 
-#center50vw {
+.center50vw {
   width: 100vw;
   display: flex;
   justify-content: center;
@@ -96,7 +97,7 @@ a {
 }
 
 #homeTextGrid {
-  width: 50vw;
+  width: var(--ViewableWidth);
   margin-top: 6rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -120,7 +121,7 @@ a {
 }
 
 .serviceTileContainer {
-  width: 50vw;
+  width: var(--ViewableWidth);
   height: 20rem;
   display: flex;
   justify-content: space-around;
@@ -164,13 +165,13 @@ h1 {
 .contactFooter {
   min-height: 520px;
   min-width: 900px;
-  height: 26rem;
+  height: 42rem;
   display: grid;
   grid-template-columns: 1rem 1.5rem 1rem 5rem 1rem 2fr 2rem 32rem;
   grid-template-rows: 1rem 2fr 1rem 1fr 1rem 1fr 1rem 2fr 1rem 1fr 1rem 2fr 1rem;
   /* (13x8) */
   margin: 2rem 0;
-  width: 50vw;
+  width: var(--ViewableWidth);
   padding: 2rem;
   border-radius: var(--Radius);
   background: rgba(0, 0, 0, 0.5);
@@ -386,6 +387,7 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 2rem;
 }
 
 #footerTile5 img {
@@ -555,3 +557,28 @@ h1 {
   justify-content: center;
   align-items: center;
 }
+
+h4 {
+  text-align: left;
+  padding: 1rem 0;
+}
+
+.aboutMegaFlexContainer {
+  width: var(--ViewableWidth);
+  margin: 10rem 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.aboutFlex2 {
+  display: flex;
+  flex-direction: row;
+}
+.margin1rem {
+  margin: 1rem;
+}
+.aboutInnerFlexRight {
+  display: flex;
+  flex-direction: column;
+}
+
