@@ -1,5 +1,7 @@
 export default function Contact() {
     return (
-        <div className="s"></div>
+        <div className="contactContainer">
+            
+        </div>
     );
 }
