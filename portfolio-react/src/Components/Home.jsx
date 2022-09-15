@@ -1,5 +1,3 @@
-import Button from './Button';
-
 export default function Home(props) {
     return (
         <div className="center50vw">
@@ -20,18 +18,29 @@ export default function Home(props) {
                 <div id="homeText2">{props.buttonLeft}</div>
                 <div id="homeText3">{props.buttonRight}</div>
             </div>
-            <div className="serviceTileContainer">
-                <div className="servicesTile">
-                    <h1 className="Title">Accounting Services</h1>
-                    <div className="subText">We'll take care of your accounting and tax so you can focus on other things.</div>
-                </div>
-                <div className="servicesTile">
-                    <h1 className="Title">Mentoring Services</h1>
-                    <div className="subText">Let us proviode mentoring services which will improve your business with targeted advice.</div>
-                </div>
-                <div className="servicesTile">
-                    <h1 className="Title">Xero Support</h1>
-                    <div className="subText">We use beauatiful accounting software to streamline and support your business.</div>
+            <div className="servicesTileBackground">
+                <div className="serviceTileContainer">
+                    <div className="servicesTile">
+                        <h1 className="Title">Accounting Services</h1>
+                        <div className="subText">We'll take care of your accounting and tax so you can focus on other things.</div>
+                    </div>
+                    <div className="servicesTile">
+                        <div className="ServicesImg"></div>
+                    </div>
+                    <div className="servicesTile">
+                        <h1 className="Title">Xero Support</h1>
+                        <div className="subText">We use beauatiful accounting software to streamline and support your business.</div>
+                    </div>
+                    <div className="servicesTile">
+                        <div className="AccountingImg"></div>
+                    </div>
+                    <div className="servicesTile">
+                        <h1 className="Title">Mentoring Services</h1>
+                        <div className="subText">Let us proviode mentoring services which will improve your business with targeted advice.</div>
+                    </div>
+                    <div className="servicesTile">
+                        <div className="XeroImg"></div>
+                    </div>
                 </div>
             </div>
         </div>

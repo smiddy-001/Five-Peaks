@@ -1,6 +1,5 @@
 import './App.css';
 import longLogo from './Components/Images/wide.png';
-
 import Home from './Components/Home'
 import Enquiry from './Components/Enquiry';
 import About from './Components/About'
@@ -10,14 +9,12 @@ import Contact from './Components/Contact';
 import Footer from './Components/Footer';
 import { useState } from 'react';
 import Button from './Components/Button';
-import wideImage from './Components/Images/wideImage.jpg'
 
 function NavBarA(props) {
   return <a href="#navBar" id={props.id} className={props.className} onClick={props.onClick}>{props.children}</a>
 }
 
 function App() {
-
   // page setup to allow the state of the page components to refresh when a change occurs ie function "ToHome" is called
 
   const [Page, setPage] = useState("Home");
@@ -89,7 +86,7 @@ Listed below are the services we offer. This list is by no means exhaustive, and
             <div className='servicesButton'>Donation Rebates</div>
 
           </div>
-            }
+        }
         b2HText="Tax"
         b3Text={
           <div className="horizontalFlex">
@@ -353,7 +350,7 @@ Listed below are the services we offer. This list is by no means exhaustive, and
         "Rental Property",
         <div>
           At Five Peaks Accounting we have the expertise required to assist you in a variety of areas relating to residential and commercial property. The services we offer our include:
-<ul>
+          <ul>
             <li>Advice on purchasing a property</li>
             <li>Reviews of lease agreements</li>
             <li>Advice on funding</li>
@@ -364,8 +361,8 @@ Listed below are the services we offer. This list is by no means exhaustive, and
             <li>Revenue returns</li>
             <li>Financial position</li>
             <li>Potential growth</li>
-</ul>
-          Contact us today for more information on how we can assist you in the business of rental properties! 
+          </ul>
+          Contact us today for more information on how we can assist you in the business of rental properties!
         </div>
       ])
   };
@@ -378,7 +375,7 @@ Listed below are the services we offer. This list is by no means exhaustive, and
 
 
           Achieving a comfortable retirement requires forward planning. You need to consider when you will retire, how much income you need for the retirement you desire, how to acquire that income, what role the government will play, and more.
-<br /><br />
+          <br /><br />
           The friendly team at Five Peaks Accounting can help you answer these questions and plan for the relaxing retirement you've earned.
 
         </div>

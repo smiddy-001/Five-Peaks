@@ -8,10 +8,12 @@
   --DarkCyan: #027975;
   --Radius: 0.2rem;
   /* radius of corners of the input fields, buttons and such */
-  --Weight: 0.2rem;
+  --Weight: 0;
   /* weight refers to the width of the input fields in the enquiry page */
-  --ViewableWidth: 40rem;
+  --ViewableWidth: 50rem;
   /* pixel width of content */
+  --EverythingBlur: 0;
+  font-size: medium;
 }
 
 html {
@@ -40,7 +42,7 @@ body {
   justify-content: center;
   align-items: center;
   background: var(--White);
-  box-shadow: 0 0 256px var(--ShadowGrey);
+  box-shadow: 0 0 16rem var(--ShadowGrey);
 }
 
 a {
@@ -130,24 +132,42 @@ a {
 
 .serviceTileContainer {
   width: var(--ViewableWidth);
-  height: 20rem;
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .servicesTile {
-  width: 16rem;
+  width: calc(var(--ViewableWidth) / 3);
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 2rem 0;
 }
 
-h1 {
-  color: var(--Cyan);
+.servicesTileBackground {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--Cyan);
 }
 
 .overallFooter h1 {
   color: var(--White);
+}
+
+.Title,
+.subText {
+  color: var(--White);
+}
+
+h1 {
+  color: var(--Cyan);
 }
 
 .overallFooter {
@@ -160,7 +180,7 @@ h1 {
 }
 
 .footerImg {
-  background: url("./Components/Images/Slip-Img.png");
+  background: url("./Components/Images/contact-bg.jpg");
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
@@ -182,7 +202,7 @@ h1 {
   max-width: calc(3 * var(--ViewableWidth));
   padding: 2rem;
   border-radius: var(--Radius);
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.75);
 }
 
 .contactFooter a {
@@ -315,7 +335,7 @@ h1 {
 
 .footerCont {
   width: 100vw;
-  height: var(--ViewableWidth);
+  height: 40rem;
   background: var(--White);
   display: flex;
   justify-content: center;
@@ -348,7 +368,10 @@ h1 {
   align-items: center;
 }
 
-#contactFooterTile4, #contactFooterTile7, #contactFooterTile10, #contactFooterTile13 {
+#contactFooterTile4,
+#contactFooterTile7,
+#contactFooterTile10,
+#contactFooterTile13 {
   justify-content: flex-start;
 }
 
@@ -414,13 +437,28 @@ h1 {
   box-shadow: 0rem .35rem;
 }
 
-.PButt {
+.PButt,
+input[type=submit] {
   padding: 1rem 2rem;
   border-radius: var(--Radius);
-  width: 10rem;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+input,
+textarea {
+  font-family: Gotham, sans-serif;
+  color: rgb(83, 83, 83);
+  padding: 0.5rem 1rem;
+}
+
+/* input[type=submit]{
+  padding: 6rem;
+} */
+input[type=submit] {
+  padding-bottom: 1.75rem;
+  border: 0 none;
 }
 
 .PButt:not(:hover) {
@@ -456,11 +494,6 @@ h1 {
   color: var(--White);
 }
 
-@media screen and (max-width: 1280px) {
-  #logo {
-    display: none;
-  }
-}
 
 .EnquiryCont {
   height: auto;
@@ -534,7 +567,6 @@ h1 {
   grid-row: 8;
   grid-column-start: 2;
   grid-column-end: 4;
-  font-weight: bold;
   border: var(--Weight) solid var(--Grey);
   border-radius: var(--Radius);
 }
@@ -552,7 +584,7 @@ h1 {
   border: var(--Weight) solid var(--Grey);
   border-radius: var(--Radius);
   width: 100%;
-  max-width: calc((25vw - 4rem)*2);
+  max-width: calc((25vw - 5rem)*2);
   max-height: 28rem;
   display: -webkit-box;
   -webkit-box-orient: vertical;
@@ -699,7 +731,7 @@ h4 {
 }
 
 .overlayContainer {
-  box-shadow: 0 0 16rem rgba(70, 70, 70, 0.1);
+  box-shadow: 0 0 4rem rgba(70, 70, 70, 0.1);
   background-color: var(--White);
   width: 80vw;
   max-width: 50rem;
@@ -710,9 +742,10 @@ h4 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--LightGrey);
+  background-color: var(--Cyan);
   height: 2rem;
   padding: 0 1rem;
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .overlayBody {
@@ -728,6 +761,7 @@ h4 {
 h1 .overlayTitle {
   margin: 2rem;
   text-align: center;
+  color: var(--Cyan);
 }
 
 .hide {
@@ -759,4 +793,75 @@ h1 .overlayTitle {
 .servicesButton {
   width: calc(var(--ViewableWidth) / 3);
   padding: 0.5rem 0;
+}
+
+.XeroImg {
+  background-image: url("./Components/Images/xeroLogo.png");
+  background-position: center;
+  background-size: cover;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+}
+
+.AccountingImg {
+  background-image: url("./Components/Images/calculator-g7654e9b6e_640.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+}
+
+.ServicesImg {
+  background-image: url("./Components/Images/software-development-g590eb61cf_640.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 1280px) {
+  #logo {
+    display: none;
+  }
+
+  .aboutFlex2 {
+    flex-direction: column;
+  }
+
+  #navBar a,
+  #footerTile3 a {
+    padding: 0.5rem;
+  }
+
+  :root {
+    --ViewableWidth: 80vw;
+    font-size: clamp(16px, 3vw, 20px);
+  }
+
+  .contactFooter {
+    grid-template-columns: 1rem 1.5rem 1rem 8rem 1rem 14rem 2rem;
+    grid-template-rows: 1rem 2fr 1rem 1fr 1rem 1fr 1rem 2fr 1rem 1fr 1rem 2fr 1rem 20rem 1rem;
+  }
+
+  #contactFooterTile15 {
+    grid-column-start: 2;
+    grid-column-end: 7;
+    grid-row: 14;
+  }
+
+  .contactFooter {
+    height: 82rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .serviceTileContainer {
+    flex-direction: column;
+  }
 }
