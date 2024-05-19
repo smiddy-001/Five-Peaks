@@ -27,16 +27,16 @@ export default function News(props) {
                 <div className="contactFooter">
                     <div id="contactFooterTile1" className="contactFooterTile"><h1>Contact</h1></div>
                     <div id="contactFooterTile2" className="contactFooterTile"><img src={Mail} alt="email" /></div>
-                    <div id="contactFooterTile3" className="contactFooterTile textRight"><h4>Email:</h4></div>
+                    <div id="contactFooterTile3" className="contactFooterTile textRight"><div>Email:</div></div>
                     <div id="contactFooterTile4" className="contactFooterTile"><a href="mailto:office@fivepeaks.co.nz<"> office@fivepeaks.co.nz</a></div>
                     <div id="contactFooterTile5" className="contactFooterTile"><img src={Call} alt="phone" /></div>
-                    <div id="contactFooterTile6" className="contactFooterTile textRight"><h4>Phone:</h4></div>
+                    <div id="contactFooterTile6" className="contactFooterTile textRight"><div>Phone:</div></div>
                     <div id="contactFooterTile7" className="contactFooterTile"><a href="tel:+034282760">(03) 428 2760</a></div>
                     <div id="contactFooterTile8" className="contactFooterTile"><img src={Map} alt="adress" /></div>
-                    <div id="contactFooterTile9" className="contactFooterTile textRight"><h4>Adress:</h4></div>
+                    <div id="contactFooterTile9" className="contactFooterTile textRight"><div>Adress:</div></div>
                     <div id="contactFooterTile10" className="contactFooterTile"><a href="https://www.google.com/maps/dir//19%2F189,+Glenda+Drive,+Shotover+Ridge,+Frankton,+Queenstown/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0xa9d51f6e3c97416f:0x1d6488e8ae6b0114?sa=X&ved=2ahUKEwj11KD-ga74AhXH9zgGHanFDFYQ9Rd6BAhjEAU">19/189, Glenda Drive, Shotover Ridge, Frankton, Queenstown</a></div>
                     <div id="contactFooterTile11" className="contactFooterTile"><img src={Time} alt="bussiness Hours" /></div>
-                    <div id="contactFooterTile12" className="contactFooterTile textRight"><h4>Bussiness Hours:</h4></div>
+                    <div id="contactFooterTile12" className="contactFooterTile textRight"><div>Bussiness Hours:</div></div>
                     <div id="contactFooterTile13" className="contactFooterTile"><div className="whiteColor">9am - 5pm, Monday to Friday</div></div>
                     <div id="contactFooterTile14" className="contactFooterTile"><Button className="SButt PButt">Book a meeting</Button></div>
                     <div id="contactFooterTile15" className="contactFooterTile"><Maps/>

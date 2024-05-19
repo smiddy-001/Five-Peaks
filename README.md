@@ -1,48 +1,70 @@
-# **Five Peaks Website Redesign**
+# Getting Started with Create React App
 
-**STEP 1**
-install nodejs to run website (https://nodejs.org/en/download/)
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-**STEP 2**
-using terminal open the project folder, using 
+## Available Scripts
 
-```cd C://where-you-extracted-the-zip-file```
+In the project directory, you can run:
 
-**STEP 3**
-The way I setup the project with github means you have to go to the directory with node package manager (package.json)
+### `npm start`
 
-type
-```cd portfolio-react```
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-**STEP 4**
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-type 
-```npm i```
+### `npm test`
 
-(this installs dependancies)
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-type
-```npm start```
-(this starts the local/network development sever which allows realtime updates when things are changed)
+### `npm run build`
 
-If the above command pops up an error, ensure you have installed nodejs (step one)
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-**Working?**
-assuming everything went swimmingly your browser should automatically open up "localhost:3000" and The terminal should display:
-```
-You can now view five-peaks-website in the browser.
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-  Local:            http://localhost:3000
-  On Your Network:  http://192.168.0.198:3000
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-Note that the development build is not optimized.
-To create a production build, use npm run build.
+### `npm run eject`
 
-webpack compiled successfully
-```
-If you want to see the website on a mobile device or other device on the network open the second link (this does not allow realtime updates to the page if jsx or css is changed hence why both network and local are avalabile options):
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-```On Your Network:  http://192.168.0.198:3000```
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-When The website is ready to be deployed to a sever reactjs will fix all the messy css and optimise everything, converts all jsx into js. 
-However I have decided not to deploy it to a sever as Five Peaks wants to keep their existing webpage, as the existing site is easier to manipulate & manage longterm.
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

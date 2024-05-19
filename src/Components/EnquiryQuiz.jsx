@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import emailjs from 'emailjs-com';
+// import emailjs from 'emailjs-com';
 
 //     const [name, setName] = useState("");
 //     const [phone, setPhone] = useState("");
@@ -18,16 +18,16 @@ export const EnquiryQuiz = () => {
     const sendEmail = (e) => {
         e.preventDefault();
 
-        emailjs.send(
-            process.env.REACT_APP_SERVICE_ID,
-            process.env.REACT_APP_TEMPLATE_ID, 
-            form.current, 
-            // process.env.REACT_APP_USER_ID
-            ).then(
-                result => console.log(result.text),
-                error => console.log(error.text)
-            )
-            e.target.reset();
+        // emailjs.send(
+        //     process.env.REACT_APP_SERVICE_ID,
+        //     process.env.REACT_APP_TEMPLATE_ID,
+        //     form.current,
+        //     // process.env.REACT_APP_USER_ID
+        //     ).then(
+        //         result => console.log(result.text),
+        //         error => console.log(error.text)
+        //     )
+        //     e.target.reset();
     };
 
     return (

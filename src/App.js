@@ -392,7 +392,7 @@ Listed below are the services we offer. This list is by no means exhaustive, and
         <div className="overlayContainer">
           <div className="overlayHeading">
             <div className="overlayTitle">{overlay[1].toLowerCase() + " info"}</div>
-            <div className="overlayIcons bold">x</div>
+            <div className="overlayIcons bold">×</div>
           </div>
           <div className="overlayBody">
             <h1 className="overlayTitle">{(overlay[1]).toUpperCase()}</h1>
